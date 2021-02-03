@@ -122,6 +122,26 @@ function filterTasks(e) {
     }
 } */
 // ascending order
+function ascending(){
+    var ul = document.querySelector('.collection')
+    var i = ul.childNodes.length
+    
+    while(i--){
+    
+        ul.appendChild(ul.childNodes[i])
+    }
+}
+function descending(){
+    var ul = document.querySelector('.collection')
+    var i = ul.childNodes.length
+    
+    while(i--){
+    
+        ul.appendChild(ul.childNodes[i])
+    }
+}
+
+
 function sortList() {
     var list, i, switching, b, shouldSwitch;
     list = document.querySelector(".collection");
